@@ -7,3 +7,6 @@
 target/
 src/main/resources/Licenta/
 src/main/resources/testFiles/
+results/
+
+metrixpp.db

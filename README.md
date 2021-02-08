@@ -1,1 +1,1 @@
-# metrixPP-wrapper
+# metrixpp-lizard-wrapper

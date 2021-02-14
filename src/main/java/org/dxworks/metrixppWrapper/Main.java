@@ -1,27 +1,28 @@
 package org.dxworks.metrixppWrapper;
 
-import com.opencsv.bean.CsvToBeanBuilder;
-import org.dxworks.metrixppWrapper.Entity.MetrixppOutput;
-import org.dxworks.metrixppWrapper.dockerRunner.DockerRunner;
+import org.dxworks.metrixppWrapper.Reader.FileReader;
+import org.dxworks.metrixppWrapper.Reader.LizardCSVFileReader;
+import org.dxworks.metrixppWrapper.Reader.MetrixppCSVFileReader;
 
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.List;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println("metrix++ wrapper");
 
-        String fileName = "/Users/denisfeier/Documents/metrixPP-wrapper/results/test.csv";
+        FileReader lizardReader = LizardCSVFileReader.getInstance();
 
-        DockerRunner.execute();
+        FileReader metrixppReader = MetrixppCSVFileReader.getInstance();
 
-        List beans = new CsvToBeanBuilder(new FileReader(fileName))
-                        .withType(MetrixppOutput.class)
-                        .build()
-                        .parse();
+        Path pathLizard = Paths.get("/Users/denisfeier/Documents/metrixPP-wrapper/src/main/resources/lizardOutput.csv");
 
-        beans.forEach(System.out::println);
+        Path pathMetrix = Paths.get("/Users/denisfeier/Documents/metrixPP-wrapper/src/main/resources/metrixppOuput.csv");
 
+        lizardReader.readFileCSV(pathLizard.toFile()).forEach(System.out::println);
+
+        System.out.println("\n\n\n\n\n");
+
+        metrixppReader.readFileCSV(pathMetrix.toFile()).forEach(System.out::println);
     }
 }

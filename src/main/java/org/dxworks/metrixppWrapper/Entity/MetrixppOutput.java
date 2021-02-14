@@ -25,30 +25,30 @@ public class MetrixppOutput {
     private String modified;
 
     @CsvBindByName(column = "line start")
-    private String lineStart;
+    private Integer lineStart;
 
     @CsvBindByName(column = "line end")
-    private String lineEnd;
+    private Integer lineEnd;
 
     @CsvBindByName(column = "std.code.complexity:cyclomatic")
-    private String cyclomaticComplexity;
+    private Integer cyclomaticComplexity;
 
     @CsvBindByName(column = "std.code.complexity:maxindent")
-    private String maxindentComplexity;
+    private Integer maxindentComplexity;
 
     @CsvBindByName(column = "std.code.lines:code")
-    private String codeLines;
+    private Integer codeLines;
 
     @CsvBindByName(column = "std.code.lines:preprocessor")
-    private String preprocessorLines;
+    private Integer preprocessorLines;
 
     @CsvBindByName(column = "std.code.lines:comments")
-    private String commentsLines;
+    private Integer commentsLines;
 
     @CsvBindByName(column = "std.code.mi:simple")
-    private String simpleMi;
+    private Integer simpleMi;
 
     @CsvBindByName(column = "std.code.member:globals")
-    private String globalsMember;
+    private Integer globalsMember;
 
 }

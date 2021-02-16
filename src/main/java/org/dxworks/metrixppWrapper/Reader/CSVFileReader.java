@@ -1,6 +1,7 @@
 package org.dxworks.metrixppWrapper.Reader;
 
 import com.opencsv.bean.CsvToBeanBuilder;
+import org.dxworks.metrixppWrapper.Entity.UnifiableOutput;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,7 +12,7 @@ class CSVFileReader {
 
     private CSVFileReader() {}
 
-    public static <A> List<A> readCSV(File file, Class<A> aClass) throws FileNotFoundException {
+    public static <A extends UnifiableOutput> List<A> readCSV(File file, Class<A> aClass) throws FileNotFoundException {
 
         List beans = new CsvToBeanBuilder(new FileReader(file))
                 .withType(aClass)

@@ -1,5 +1,9 @@
 package org.dxworks.metrixppWrapper;
 
+import com.google.gson.Gson;
+import org.dxworks.metrixppWrapper.Entity.LizardOutput;
+import org.dxworks.metrixppWrapper.Entity.MetrixppOutput;
+import org.dxworks.metrixppWrapper.Entity.UnifiedOutput;
 import org.dxworks.metrixppWrapper.Reader.FileReader;
 import org.dxworks.metrixppWrapper.Reader.LizardCSVFileReader;
 import org.dxworks.metrixppWrapper.Reader.MetrixppCSVFileReader;
@@ -7,22 +11,30 @@ import org.dxworks.metrixppWrapper.Reader.MetrixppCSVFileReader;
 import java.io.FileNotFoundException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
-        FileReader lizardReader = LizardCSVFileReader.getInstance();
+        FileReader<LizardOutput> lizardReader = LizardCSVFileReader.getInstance();
 
-        FileReader metrixppReader = MetrixppCSVFileReader.getInstance();
+        FileReader<MetrixppOutput> metrixppReader = MetrixppCSVFileReader.getInstance();
 
         Path pathLizard = Paths.get("/Users/denisfeier/Documents/metrixPP-wrapper/src/main/resources/lizardOutput.csv");
 
         Path pathMetrix = Paths.get("/Users/denisfeier/Documents/metrixPP-wrapper/src/main/resources/metrixppOuput.csv");
 
-        lizardReader.readFileCSV(pathLizard.toFile()).forEach(System.out::println);
+        Gson gson = new Gson();
 
-        System.out.println("\n\n\n\n\n");
 
-        metrixppReader.readFileCSV(pathMetrix.toFile()).forEach(System.out::println);
+        List<UnifiedOutput> outputLizard = lizardReader.readFileCSV(pathLizard.toFile()).stream().map(LizardOutput::unify).collect(Collectors.toList());
+
+        List<UnifiedOutput> outputMetrixpp = metrixppReader.readFileCSV(pathMetrix.toFile()).stream().map(MetrixppOutput::unify).collect(Collectors.toList());
+
+        List<UnifiedOutput> output = Stream.concat(outputLizard.stream(), outputMetrixpp.stream()).sorted((e1, e2) -> e1.getFile().compareToIgnoreCase(e2.getFile())).collect(Collectors.toList());
+
+        System.out.println(gson.toJson(output));
     }
 }

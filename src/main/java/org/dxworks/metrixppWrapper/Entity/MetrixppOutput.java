@@ -6,11 +6,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.time.LocalDate;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class MetrixppOutput {
+public class MetrixppOutput implements UnifiableOutput {
 
     @CsvBindByName(column = "file")
     private String file;
@@ -51,4 +53,24 @@ public class MetrixppOutput {
     @CsvBindByName(column = "std.code.member:globals")
     private Integer globalsMember;
 
+    @Override
+    public UnifiedOutput unify() {
+        return UnifiedOutput.builder()
+                .source(SourceAnalyzer.Metrixpp)
+                .dateOfAnalysis(LocalDate.now())
+                .file(this.file)
+                .region(this.region)
+                .type(this.type)
+                .modified(this.modified)
+                .lineStart(this.lineStart)
+                .lineEnd(this.lineEnd)
+                .cyclomaticComplexity(this.cyclomaticComplexity)
+                .maxindentComplexity(this.maxindentComplexity)
+                .codeLines(this.codeLines)
+                .preprocessorLines(this.preprocessorLines)
+                .commentsLines(this.commentsLines)
+                .simpleMi(this.simpleMi)
+                .globalsMember(this.globalsMember)
+                .build();
+    }
 }

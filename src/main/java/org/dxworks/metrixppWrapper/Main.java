@@ -1,12 +1,11 @@
 package org.dxworks.metrixppWrapper;
 
 import com.google.gson.Gson;
-import org.dxworks.metrixppWrapper.Entity.LizardOutput;
-import org.dxworks.metrixppWrapper.Entity.MetrixppOutput;
-import org.dxworks.metrixppWrapper.Entity.UnifiedOutput;
+import org.dxworks.metrixppWrapper.Entity.*;
 import org.dxworks.metrixppWrapper.Reader.FileReader;
 import org.dxworks.metrixppWrapper.Reader.LizardCSVFileReader;
 import org.dxworks.metrixppWrapper.Reader.MetrixppCSVFileReader;
+import org.dxworks.metrixppWrapper.dockerRunner.DockerLizardRunner;
 
 import java.io.FileNotFoundException;
 import java.nio.file.Path;
@@ -28,13 +27,21 @@ public class Main {
 
         Gson gson = new Gson();
 
-
         List<UnifiedOutput> outputLizard = lizardReader.readFileCSV(pathLizard.toFile()).stream().map(LizardOutput::unify).collect(Collectors.toList());
 
         List<UnifiedOutput> outputMetrixpp = metrixppReader.readFileCSV(pathMetrix.toFile()).stream().map(MetrixppOutput::unify).collect(Collectors.toList());
 
         List<UnifiedOutput> output = Stream.concat(outputLizard.stream(), outputMetrixpp.stream()).sorted((e1, e2) -> e1.getFile().compareToIgnoreCase(e2.getFile())).collect(Collectors.toList());
 
-        System.out.println(gson.toJson(output));
+        OutputWithMetaInfo outputWithMetaInfo = new OutputWithMetaInfo();
+
+        MetaInfo metaInfo = new MetaInfo();
+
+        metaInfo.setTimestamp(System.currentTimeMillis());
+
+        outputWithMetaInfo.setResults(output);
+        outputWithMetaInfo.setMetaInfo(metaInfo);
+
+        System.out.println(gson.toJson(outputWithMetaInfo));
     }
 }

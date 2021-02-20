@@ -1,0 +1,1217 @@
+{
+  "metaInfo": {
+    "timestamp": 1613850226013
+  },
+  "results": [
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/dockerRunner/DockerRunner.java",
+      "lineStart": 1,
+      "lineEnd": 30,
+      "region": "__global__",
+      "type": "global",
+      "modified": "",
+      "codeLines": 5,
+      "preprocessorLines": 0,
+      "commentsLines": 0,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/dockerRunner/DockerRunner.java",
+      "lineStart": 8,
+      "lineEnd": 29,
+      "region": "DockerRunner",
+      "type": "class",
+      "modified": "",
+      "codeLines": 2,
+      "preprocessorLines": 0,
+      "commentsLines": 0,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/dockerRunner/DockerRunner.java",
+      "lineStart": 10,
+      "lineEnd": 27,
+      "region": "execute",
+      "type": "function",
+      "modified": "",
+      "cyclomaticComplexity": 2,
+      "maxindentComplexity": 3,
+      "codeLines": 14,
+      "preprocessorLines": 0,
+      "commentsLines": 4,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/dockerRunner/DockerRunner.java",
+      "lineStart": 1,
+      "lineEnd": 30,
+      "region": "",
+      "type": "file",
+      "modified": ""
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/Entity/MetrixppOutput.java",
+      "lineStart": 1,
+      "lineEnd": 176,
+      "region": "__global__",
+      "type": "global",
+      "modified": "",
+      "codeLines": 5,
+      "preprocessorLines": 0,
+      "commentsLines": 0,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/Entity/MetrixppOutput.java",
+      "lineStart": 8,
+      "lineEnd": 175,
+      "region": "MetrixppOutput",
+      "type": "class",
+      "modified": "",
+      "codeLines": 31,
+      "preprocessorLines": 0,
+      "commentsLines": 104,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/Entity/MetrixppOutput.java",
+      "lineStart": 157,
+      "lineEnd": 174,
+      "region": "toString",
+      "type": "function",
+      "modified": "",
+      "cyclomaticComplexity": 0,
+      "maxindentComplexity": 1,
+      "codeLines": 18,
+      "preprocessorLines": 0,
+      "commentsLines": 0,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/Entity/MetrixppOutput.java",
+      "lineStart": 1,
+      "lineEnd": 176,
+      "region": "",
+      "type": "file",
+      "modified": ""
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/Main.java",
+      "lineStart": 1,
+      "lineEnd": 28,
+      "region": "__global__",
+      "type": "global",
+      "modified": "",
+      "codeLines": 7,
+      "preprocessorLines": 0,
+      "commentsLines": 0,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/Main.java",
+      "lineStart": 11,
+      "lineEnd": 27,
+      "region": "Main",
+      "type": "class",
+      "modified": "",
+      "codeLines": 2,
+      "preprocessorLines": 0,
+      "commentsLines": 0,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/Main.java",
+      "lineStart": 12,
+      "lineEnd": 26,
+      "region": "main",
+      "type": "function",
+      "modified": "",
+      "cyclomaticComplexity": 0,
+      "maxindentComplexity": 1,
+      "codeLines": 10,
+      "preprocessorLines": 0,
+      "commentsLines": 0,
+      "simpleMi": 1
+    },
+    {
+      "source": "Metrixpp",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "file": "./src/main/java/org/dxworks/metrixppWrapper/Main.java",
+      "lineStart": 1,
+      "lineEnd": 28,
+      "region": "",
+      "type": "file",
+      "modified": ""
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 17,
+      "param": 2,
+      "length": 3,
+      "location": "Buyer::Buyer@7-9@PCBE/src/main/java/com/denisfeier/entity/Buyer.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Buyer.java",
+      "methodeNameAndContext": "Buyer::Buyer",
+      "methodSignature": "Buyer::Buyer( String instanceIdentifier , Market stockMarket)",
+      "lineStart": 7,
+      "lineEnd": 9,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 26,
+      "param": 1,
+      "length": 3,
+      "location": "Buyer::notify@12-14@PCBE/src/main/java/com/denisfeier/entity/Buyer.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Buyer.java",
+      "methodeNameAndContext": "Buyer::notify",
+      "methodSignature": "Buyer::notify( double cost)",
+      "lineStart": 12,
+      "lineEnd": 14,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 63,
+      "param": 1,
+      "length": 11,
+      "location": "Buyer::addDemand@16-26@PCBE/src/main/java/com/denisfeier/entity/Buyer.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Buyer.java",
+      "methodeNameAndContext": "Buyer::addDemand",
+      "methodSignature": "Buyer::addDemand( final Demand demand)",
+      "lineStart": 16,
+      "lineEnd": 26,
+      "cyclomaticComplexity": 1,
+      "codeLines": 11,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 22,
+      "param": 3,
+      "length": 3,
+      "location": "Demand::Demand@5-7@PCBE/src/main/java/com/denisfeier/entity/Demand.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Demand.java",
+      "methodeNameAndContext": "Demand::Demand",
+      "methodSignature": "Demand::Demand( double price , int count , Buyer owner)",
+      "lineStart": 5,
+      "lineEnd": 7,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 31,
+      "param": 1,
+      "length": 4,
+      "location": "Demand::use@9-12@PCBE/src/main/java/com/denisfeier/entity/Demand.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Demand.java",
+      "methodeNameAndContext": "Demand::use",
+      "methodSignature": "Demand::use( int count)",
+      "lineStart": 9,
+      "lineEnd": 12,
+      "cyclomaticComplexity": 1,
+      "codeLines": 4,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 89,
+      "param": 2,
+      "length": 16,
+      "location": "Person::Person@21-36@PCBE/src/main/java/com/denisfeier/entity/Person.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Person.java",
+      "methodeNameAndContext": "Person::Person",
+      "methodSignature": "Person::Person( String instanceIdentifier , Market stockMarket)",
+      "lineStart": 21,
+      "lineEnd": 36,
+      "cyclomaticComplexity": 1,
+      "codeLines": 13,
+      "commentsLines": 3
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 10,
+      "param": 0,
+      "length": 3,
+      "location": "Person::getIdentifier@38-40@PCBE/src/main/java/com/denisfeier/entity/Person.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Person.java",
+      "methodeNameAndContext": "Person::getIdentifier",
+      "methodSignature": "Person::getIdentifier()",
+      "lineStart": 38,
+      "lineEnd": 40,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 10,
+      "param": 0,
+      "length": 3,
+      "location": "Person::getName@42-44@PCBE/src/main/java/com/denisfeier/entity/Person.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Person.java",
+      "methodeNameAndContext": "Person::getName",
+      "methodSignature": "Person::getName()",
+      "lineStart": 42,
+      "lineEnd": 44,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 17,
+      "param": 2,
+      "length": 3,
+      "location": "Seller::Seller@7-9@PCBE/src/main/java/com/denisfeier/entity/Seller.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Seller.java",
+      "methodeNameAndContext": "Seller::Seller",
+      "methodSignature": "Seller::Seller( String instanceIdentifier , Market stockMarket)",
+      "lineStart": 7,
+      "lineEnd": 9,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 79,
+      "param": 2,
+      "length": 12,
+      "location": "Seller::createSupply@11-22@PCBE/src/main/java/com/denisfeier/entity/Seller.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Seller.java",
+      "methodeNameAndContext": "Seller::createSupply",
+      "methodSignature": "Seller::createSupply( double price , int count)",
+      "lineStart": 11,
+      "lineEnd": 22,
+      "cyclomaticComplexity": 1,
+      "codeLines": 12,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 26,
+      "param": 1,
+      "length": 3,
+      "location": "Seller::notify@25-27@PCBE/src/main/java/com/denisfeier/entity/Seller.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Seller.java",
+      "methodeNameAndContext": "Seller::notify",
+      "methodSignature": "Seller::notify( double cost)",
+      "lineStart": 25,
+      "lineEnd": 27,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 22,
+      "param": 3,
+      "length": 3,
+      "location": "Stock::Stock@5-7@PCBE/src/main/java/com/denisfeier/entity/Stock.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Stock.java",
+      "methodeNameAndContext": "Stock::Stock",
+      "methodSignature": "Stock::Stock( double price , int count , Seller owner)",
+      "lineStart": 5,
+      "lineEnd": 7,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 35,
+      "param": 1,
+      "length": 4,
+      "location": "Stock::use@9-12@PCBE/src/main/java/com/denisfeier/entity/Stock.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/Stock.java",
+      "methodeNameAndContext": "Stock::use",
+      "methodSignature": "Stock::use( int count)",
+      "lineStart": 9,
+      "lineEnd": 12,
+      "cyclomaticComplexity": 1,
+      "codeLines": 4,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 34,
+      "param": 3,
+      "length": 5,
+      "location": "StockElement::StockElement@13-17@PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "methodeNameAndContext": "StockElement::StockElement",
+      "methodSignature": "StockElement::StockElement( double price , int count , Person owner)",
+      "lineStart": 13,
+      "lineEnd": 17,
+      "cyclomaticComplexity": 1,
+      "codeLines": 5,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 8,
+      "param": 0,
+      "length": 3,
+      "location": "StockElement::getPrice@19-21@PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "methodeNameAndContext": "StockElement::getPrice",
+      "methodSignature": "StockElement::getPrice()",
+      "lineStart": 19,
+      "lineEnd": 21,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 13,
+      "param": 1,
+      "length": 3,
+      "location": "StockElement::setPrice@23-25@PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "methodeNameAndContext": "StockElement::setPrice",
+      "methodSignature": "StockElement::setPrice( double price)",
+      "lineStart": 23,
+      "lineEnd": 25,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 8,
+      "param": 0,
+      "length": 3,
+      "location": "StockElement::getCount@27-29@PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "methodeNameAndContext": "StockElement::getCount",
+      "methodSignature": "StockElement::getCount()",
+      "lineStart": 27,
+      "lineEnd": 29,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 13,
+      "param": 1,
+      "length": 3,
+      "location": "StockElement::setCount@31-33@PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "methodeNameAndContext": "StockElement::setCount",
+      "methodSignature": "StockElement::setCount( int count)",
+      "lineStart": 31,
+      "lineEnd": 33,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 8,
+      "param": 0,
+      "length": 3,
+      "location": "StockElement::getOwner@35-37@PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "methodeNameAndContext": "StockElement::getOwner",
+      "methodSignature": "StockElement::getOwner()",
+      "lineStart": 35,
+      "lineEnd": 37,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 13,
+      "param": 1,
+      "length": 3,
+      "location": "StockElement::setOwner@39-41@PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "methodeNameAndContext": "StockElement::setOwner",
+      "methodSignature": "StockElement::setOwner( Person owner)",
+      "lineStart": 39,
+      "lineEnd": 41,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 24,
+      "param": 0,
+      "length": 3,
+      "location": "StockElement::toString@44-46@PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "file": "PCBE/src/main/java/com/denisfeier/entity/StockElement.java",
+      "methodeNameAndContext": "StockElement::toString",
+      "methodSignature": "StockElement::toString()",
+      "lineStart": 44,
+      "lineEnd": 46,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 32,
+      "param": 0,
+      "length": 5,
+      "location": "BasicStockMarketBuilder::BasicStockMarketBuilder@11-15@PCBE/src/main/java/com/denisfeier/lib/BasicStockMarketBuilder.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/BasicStockMarketBuilder.java",
+      "methodeNameAndContext": "BasicStockMarketBuilder::BasicStockMarketBuilder",
+      "methodSignature": "BasicStockMarketBuilder::BasicStockMarketBuilder()",
+      "lineStart": 11,
+      "lineEnd": 15,
+      "cyclomaticComplexity": 1,
+      "codeLines": 5,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 19,
+      "param": 1,
+      "length": 4,
+      "location": "BasicStockMarketBuilder::setEnabledLogger@17-20@PCBE/src/main/java/com/denisfeier/lib/BasicStockMarketBuilder.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/BasicStockMarketBuilder.java",
+      "methodeNameAndContext": "BasicStockMarketBuilder::setEnabledLogger",
+      "methodSignature": "BasicStockMarketBuilder::setEnabledLogger( boolean enabledLogger)",
+      "lineStart": 17,
+      "lineEnd": 20,
+      "cyclomaticComplexity": 1,
+      "codeLines": 4,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 27,
+      "param": 1,
+      "length": 5,
+      "location": "BasicStockMarketBuilder::setThreadPool@22-26@PCBE/src/main/java/com/denisfeier/lib/BasicStockMarketBuilder.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/BasicStockMarketBuilder.java",
+      "methodeNameAndContext": "BasicStockMarketBuilder::setThreadPool",
+      "methodSignature": "BasicStockMarketBuilder::setThreadPool( ThreadPool threadPool)",
+      "lineStart": 22,
+      "lineEnd": 26,
+      "cyclomaticComplexity": 1,
+      "codeLines": 5,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 10,
+      "param": 0,
+      "length": 3,
+      "location": "BasicStockMarketBuilder::build@28-30@PCBE/src/main/java/com/denisfeier/lib/BasicStockMarketBuilder.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/BasicStockMarketBuilder.java",
+      "methodeNameAndContext": "BasicStockMarketBuilder::build",
+      "methodSignature": "BasicStockMarketBuilder::build()",
+      "lineStart": 28,
+      "lineEnd": 30,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 13,
+      "param": 1,
+      "length": 3,
+      "location": "MarketImpl::setEnabledLogger@24-26@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::setEnabledLogger",
+      "methodSignature": "MarketImpl::setEnabledLogger( boolean enabledLogger)",
+      "lineStart": 24,
+      "lineEnd": 26,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 13,
+      "param": 1,
+      "length": 3,
+      "location": "MarketImpl::setThreadPool@28-30@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::setThreadPool",
+      "methodSignature": "MarketImpl::setThreadPool( ThreadPool threadPool)",
+      "lineStart": 28,
+      "lineEnd": 30,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 55,
+      "param": 1,
+      "length": 7,
+      "location": "MarketImpl::addSupply@32-38@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::addSupply",
+      "methodSignature": "MarketImpl::addSupply( Stock stock)",
+      "lineStart": 32,
+      "lineEnd": 38,
+      "cyclomaticComplexity": 1,
+      "codeLines": 6,
+      "commentsLines": 1
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 84,
+      "param": 1,
+      "length": 12,
+      "location": "MarketImpl::addDemand@40-51@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::addDemand",
+      "methodSignature": "MarketImpl::addDemand( final Demand demand)",
+      "lineStart": 40,
+      "lineEnd": 51,
+      "cyclomaticComplexity": 1,
+      "codeLines": 11,
+      "commentsLines": 1
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 39,
+      "param": 0,
+      "length": 8,
+      "location": "MarketImpl::run@53-60@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::run",
+      "methodSignature": "MarketImpl::run()",
+      "lineStart": 53,
+      "lineEnd": 60,
+      "cyclomaticComplexity": 2,
+      "codeLines": 8,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 40,
+      "param": 0,
+      "length": 8,
+      "location": "MarketImpl::stop@62-69@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::stop",
+      "methodSignature": "MarketImpl::stop()",
+      "lineStart": 62,
+      "lineEnd": 69,
+      "cyclomaticComplexity": 2,
+      "codeLines": 8,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 54,
+      "param": 0,
+      "length": 9,
+      "location": "MarketImpl::printHistory@76-84@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::printHistory",
+      "methodSignature": "MarketImpl::printHistory()",
+      "lineStart": 76,
+      "lineEnd": 84,
+      "cyclomaticComplexity": 2,
+      "codeLines": 7,
+      "commentsLines": 2
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 131,
+      "param": 2,
+      "length": 22,
+      "location": "MarketImpl::tryToBuy@86-107@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::tryToBuy",
+      "methodSignature": "MarketImpl::tryToBuy( Demand demand , Stock stock)",
+      "lineStart": 86,
+      "lineEnd": 107,
+      "cyclomaticComplexity": 4,
+      "codeLines": 13,
+      "commentsLines": 9
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 45,
+      "param": 1,
+      "length": 8,
+      "location": "MarketImpl::removeDemand@108-115@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::removeDemand",
+      "methodSignature": "MarketImpl::removeDemand( Demand demand)",
+      "lineStart": 108,
+      "lineEnd": 115,
+      "cyclomaticComplexity": 1,
+      "codeLines": 6,
+      "commentsLines": 2
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 65,
+      "param": 1,
+      "length": 7,
+      "location": "MarketImpl::updateHistory@117-123@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::updateHistory",
+      "methodSignature": "MarketImpl::updateHistory( String message)",
+      "lineStart": 117,
+      "lineEnd": 123,
+      "cyclomaticComplexity": 2,
+      "codeLines": 7,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 43,
+      "param": 1,
+      "length": 7,
+      "location": "MarketImpl::removeSupply@125-131@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::removeSupply",
+      "methodSignature": "MarketImpl::removeSupply( Stock stock)",
+      "lineStart": 125,
+      "lineEnd": 131,
+      "cyclomaticComplexity": 1,
+      "codeLines": 6,
+      "commentsLines": 1
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 118,
+      "param": 1,
+      "length": 24,
+      "location": "MarketImpl::matchDemandWithSupply@133-156@PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketImpl.java",
+      "methodeNameAndContext": "MarketImpl::matchDemandWithSupply",
+      "methodSignature": "MarketImpl::matchDemandWithSupply( Demand demand)",
+      "lineStart": 133,
+      "lineEnd": 156,
+      "cyclomaticComplexity": 7,
+      "codeLines": 19,
+      "commentsLines": 5
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 8,
+      "param": 0,
+      "length": 3,
+      "location": "MarketSingleton::shared@6-8@PCBE/src/main/java/com/denisfeier/lib/MarketSingleton.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/MarketSingleton.java",
+      "methodeNameAndContext": "MarketSingleton::shared",
+      "methodSignature": "MarketSingleton::shared()",
+      "lineStart": 6,
+      "lineEnd": 8,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 8,
+      "param": 0,
+      "length": 3,
+      "location": "StockMarketSingleton::getInstance@9-11@PCBE/src/main/java/com/denisfeier/lib/StockMarketSingleton.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/StockMarketSingleton.java",
+      "methodeNameAndContext": "StockMarketSingleton::getInstance",
+      "methodSignature": "StockMarketSingleton::getInstance()",
+      "lineStart": 9,
+      "lineEnd": 11,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 29,
+      "param": 0,
+      "length": 6,
+      "location": "StockMarketSingleton::getStockMarketInstance@13-18@PCBE/src/main/java/com/denisfeier/lib/StockMarketSingleton.java",
+      "file": "PCBE/src/main/java/com/denisfeier/lib/StockMarketSingleton.java",
+      "methodeNameAndContext": "StockMarketSingleton::getStockMarketInstance",
+      "methodSignature": "StockMarketSingleton::getStockMarketInstance()",
+      "lineStart": 13,
+      "lineEnd": 18,
+      "cyclomaticComplexity": 1,
+      "codeLines": 6,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 65,
+      "param": 1,
+      "length": 13,
+      "location": "PCBE::main@14-26@PCBE/src/main/java/com/denisfeier/PCBE.java",
+      "file": "PCBE/src/main/java/com/denisfeier/PCBE.java",
+      "methodeNameAndContext": "PCBE::main",
+      "methodSignature": "PCBE::main( String [ ] args)",
+      "lineStart": 14,
+      "lineEnd": 26,
+      "cyclomaticComplexity": 2,
+      "codeLines": 11,
+      "commentsLines": 2
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 184,
+      "param": 3,
+      "length": 23,
+      "location": "PCBE::initApp@28-50@PCBE/src/main/java/com/denisfeier/PCBE.java",
+      "file": "PCBE/src/main/java/com/denisfeier/PCBE.java",
+      "methodeNameAndContext": "PCBE::initApp",
+      "methodSignature": "PCBE::initApp( int numberOfSellers , int numberOfBuyers , Market market)",
+      "lineStart": 28,
+      "lineEnd": 50,
+      "cyclomaticComplexity": 5,
+      "codeLines": 17,
+      "commentsLines": 6
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 71,
+      "param": 1,
+      "length": 10,
+      "location": "ThreadPoolImpl::ThreadPoolImpl@12-21@PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "methodeNameAndContext": "ThreadPoolImpl::ThreadPoolImpl",
+      "methodSignature": "ThreadPoolImpl::ThreadPoolImpl( int threadsCount)",
+      "lineStart": 12,
+      "lineEnd": 21,
+      "cyclomaticComplexity": 2,
+      "codeLines": 9,
+      "commentsLines": 1
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 19,
+      "param": 1,
+      "length": 4,
+      "location": "ThreadPoolImpl::PoolWorker::PoolWorker@29-32@PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "methodeNameAndContext": "ThreadPoolImpl::PoolWorker::PoolWorker",
+      "methodSignature": "ThreadPoolImpl::PoolWorker::PoolWorker( int number)",
+      "lineStart": 29,
+      "lineEnd": 32,
+      "cyclomaticComplexity": 1,
+      "codeLines": 4,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 13,
+      "param": 1,
+      "length": 3,
+      "location": "ThreadPoolImpl::PoolWorker::setRunning@34-36@PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "methodeNameAndContext": "ThreadPoolImpl::PoolWorker::setRunning",
+      "methodSignature": "ThreadPoolImpl::PoolWorker::setRunning( boolean running)",
+      "lineStart": 34,
+      "lineEnd": 36,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 113,
+      "param": 0,
+      "length": 27,
+      "location": "ThreadPoolImpl::PoolWorker::run@38-64@PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "methodeNameAndContext": "ThreadPoolImpl::PoolWorker::run",
+      "methodSignature": "ThreadPoolImpl::PoolWorker::run()",
+      "lineStart": 38,
+      "lineEnd": 64,
+      "cyclomaticComplexity": 7,
+      "codeLines": 23,
+      "commentsLines": 4
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 22,
+      "param": 0,
+      "length": 3,
+      "location": "ThreadPoolImpl::PoolWorker::toString@67-69@PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "methodeNameAndContext": "ThreadPoolImpl::PoolWorker::toString",
+      "methodSignature": "ThreadPoolImpl::PoolWorker::toString()",
+      "lineStart": 67,
+      "lineEnd": 69,
+      "cyclomaticComplexity": 1,
+      "codeLines": 3,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 26,
+      "param": 1,
+      "length": 6,
+      "location": "ThreadPoolImpl::execute@73-78@PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "methodeNameAndContext": "ThreadPoolImpl::execute",
+      "methodSignature": "ThreadPoolImpl::execute( Runnable task)",
+      "lineStart": 73,
+      "lineEnd": 78,
+      "cyclomaticComplexity": 1,
+      "codeLines": 6,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 52,
+      "param": 0,
+      "length": 8,
+      "location": "ThreadPoolImpl::restart@81-88@PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "methodeNameAndContext": "ThreadPoolImpl::restart",
+      "methodSignature": "ThreadPoolImpl::restart()",
+      "lineStart": 81,
+      "lineEnd": 88,
+      "cyclomaticComplexity": 3,
+      "codeLines": 8,
+      "commentsLines": 0
+    },
+    {
+      "source": "Lizard",
+      "dateOfAnalysis": {
+        "year": 2021,
+        "month": 2,
+        "day": 20
+      },
+      "token": 43,
+      "param": 0,
+      "length": 9,
+      "location": "ThreadPoolImpl::shutdown@91-99@PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "file": "PCBE/src/main/java/com/denisfeier/pool/ThreadPoolImpl.java",
+      "methodeNameAndContext": "ThreadPoolImpl::shutdown",
+      "methodSignature": "ThreadPoolImpl::shutdown()",
+      "lineStart": 91,
+      "lineEnd": 99,
+      "cyclomaticComplexity": 2,
+      "codeLines": 8,
+      "commentsLines": 1
+    }
+  ]
+}

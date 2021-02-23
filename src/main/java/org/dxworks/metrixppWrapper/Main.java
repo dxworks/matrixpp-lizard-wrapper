@@ -5,7 +5,6 @@ import org.dxworks.metrixppWrapper.Entity.*;
 import org.dxworks.metrixppWrapper.Reader.FileReader;
 import org.dxworks.metrixppWrapper.Reader.LizardCSVFileReader;
 import org.dxworks.metrixppWrapper.Reader.MetrixppCSVFileReader;
-import org.dxworks.metrixppWrapper.dockerRunner.DockerLizardRunner;
 
 import java.io.FileNotFoundException;
 import java.nio.file.Path;

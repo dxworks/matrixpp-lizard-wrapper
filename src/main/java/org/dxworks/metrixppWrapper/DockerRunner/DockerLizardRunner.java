@@ -1,4 +1,4 @@
-package org.dxworks.metrixppWrapper.dockerRunner;
+package org.dxworks.metrixppWrapper.DockerRunner;
 
 import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.api.command.CreateContainerResponse;

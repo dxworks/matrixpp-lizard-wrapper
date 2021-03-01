@@ -1,4 +1,4 @@
-package org.dxworks.metrixppWrapper.Entity;
+package org.dxworks.metrixppLizardWrapper.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

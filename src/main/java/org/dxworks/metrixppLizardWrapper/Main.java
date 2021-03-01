@@ -1,10 +1,10 @@
-package org.dxworks.metrixppWrapper;
+package org.dxworks.metrixppLizardWrapper;
 
 import com.google.gson.Gson;
-import org.dxworks.metrixppWrapper.Entity.*;
-import org.dxworks.metrixppWrapper.Reader.FileReader;
-import org.dxworks.metrixppWrapper.Reader.LizardCSVFileReader;
-import org.dxworks.metrixppWrapper.Reader.MetrixppCSVFileReader;
+import org.dxworks.metrixppLizardWrapper.Entity.*;
+import org.dxworks.metrixppLizardWrapper.Reader.FileReader;
+import org.dxworks.metrixppLizardWrapper.Reader.LizardCSVFileReader;
+import org.dxworks.metrixppLizardWrapper.Reader.MetrixppCSVFileReader;
 
 import java.io.FileNotFoundException;
 import java.nio.file.Path;

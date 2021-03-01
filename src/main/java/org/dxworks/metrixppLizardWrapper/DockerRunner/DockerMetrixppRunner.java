@@ -1,15 +1,13 @@
-package org.dxworks.metrixppWrapper.DockerRunner;
+package org.dxworks.metrixppLizardWrapper.DockerRunner;
 
 import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.api.command.CreateContainerResponse;
 import com.github.dockerjava.api.model.Bind;
 import com.github.dockerjava.core.DockerClientBuilder;
-import org.dxworks.metrixppWrapper.Entity.LizardOutput;
-import org.dxworks.metrixppWrapper.Entity.MetrixppOutput;
-import org.dxworks.metrixppWrapper.Entity.UnifiedOutput;
-import org.dxworks.metrixppWrapper.Reader.FileReader;
-import org.dxworks.metrixppWrapper.Reader.LizardCSVFileReader;
-import org.dxworks.metrixppWrapper.Reader.MetrixppCSVFileReader;
+import org.dxworks.metrixppLizardWrapper.Entity.MetrixppOutput;
+import org.dxworks.metrixppLizardWrapper.Entity.UnifiedOutput;
+import org.dxworks.metrixppLizardWrapper.Reader.FileReader;
+import org.dxworks.metrixppLizardWrapper.Reader.MetrixppCSVFileReader;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,6 +1,6 @@
-package org.dxworks.metrixppWrapper.Reader;
+package org.dxworks.metrixppLizardWrapper.Reader;
 
-import org.dxworks.metrixppWrapper.Entity.LizardOutput;
+import org.dxworks.metrixppLizardWrapper.Entity.LizardOutput;
 
 import java.io.File;
 import java.io.FileNotFoundException;

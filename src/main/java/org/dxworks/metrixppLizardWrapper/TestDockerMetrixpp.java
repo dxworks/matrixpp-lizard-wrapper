@@ -1,8 +1,7 @@
-package org.dxworks.metrixppWrapper;
+package org.dxworks.metrixppLizardWrapper;
 
-import org.dxworks.metrixppWrapper.DockerRunner.DockerLizardRunner;
-import org.dxworks.metrixppWrapper.DockerRunner.DockerMetrixppRunner;
-import org.dxworks.metrixppWrapper.Entity.UnifiedOutput;
+import org.dxworks.metrixppLizardWrapper.DockerRunner.DockerMetrixppRunner;
+import org.dxworks.metrixppLizardWrapper.Entity.UnifiedOutput;
 
 import java.io.FileNotFoundException;
 import java.nio.file.Path;

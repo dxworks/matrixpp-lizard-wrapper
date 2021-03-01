@@ -1,7 +1,7 @@
-package org.dxworks.metrixppWrapper.Reader;
+package org.dxworks.metrixppLizardWrapper.Reader;
 
 import com.opencsv.bean.CsvToBeanBuilder;
-import org.dxworks.metrixppWrapper.Entity.UnifiableOutput;
+import org.dxworks.metrixppLizardWrapper.Entity.UnifiableOutput;
 
 import java.io.File;
 import java.io.FileNotFoundException;

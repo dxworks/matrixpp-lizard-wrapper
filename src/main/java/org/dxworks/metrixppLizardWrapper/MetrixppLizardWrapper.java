@@ -1,17 +1,42 @@
 package org.dxworks.metrixppLizardWrapper;
 
-import org.dxworks.metrixppLizardWrapper.Lib.ConsoleArgumentsList;
+import com.google.gson.Gson;
+import org.dxworks.metrixppLizardWrapper.Entity.MetaInfo;
+import org.dxworks.metrixppLizardWrapper.Entity.OutputWithMetaInfo;
+import org.dxworks.metrixppLizardWrapper.Entity.UnifiedOutput;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class MetrixppLizardWrapper {
     public static void main(String[] args) {
-//        -DinputDir="/Users/denisfeier/Documents/node-cu-george"
-//        -DoutputDir="/Users/denisfeier/Documents/metrixPP-wrapper/res"
-//        -DlizardImageID="93db6ce88c38"
-//        -DmetrixppImageID="50207117a4dc"
-//        -Dconfig=""
 
-        ConsoleArgumentsList instance = ConsoleArgumentsList.getInstance();
+        MetaInfo metaInfo = new MetaInfo();
 
-        System.out.println(instance);
+        OutputWithMetaInfo finalOutput = new OutputWithMetaInfo();
+
+        finalOutput.setMetaInfo(metaInfo);
+
+        long beginTime = System.currentTimeMillis();
+
+        metaInfo.setTimestamp(beginTime);
+
+        metaInfo.setLizard_status("SUCCESS");
+
+        metaInfo.setMetrixpp_status("SUCCESS");
+
+        List<UnifiedOutput> results = new LinkedList<>();
+
+        long endTime = System.currentTimeMillis();
+
+        long duration = beginTime - endTime;
+
+        metaInfo.setDuration(duration);
+
+        finalOutput.setResults(results);
+
+        Gson gson = new Gson();
+
+        System.out.println(gson.toJson(finalOutput));
     }
 }

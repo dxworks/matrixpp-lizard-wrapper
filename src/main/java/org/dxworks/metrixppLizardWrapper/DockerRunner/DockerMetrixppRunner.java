@@ -5,24 +5,38 @@ import com.github.dockerjava.api.command.CreateContainerResponse;
 import com.github.dockerjava.api.model.Bind;
 import com.github.dockerjava.core.DockerClientBuilder;
 import org.dxworks.metrixppLizardWrapper.Entity.MetrixppOutput;
-import org.dxworks.metrixppLizardWrapper.Entity.UnifiedOutput;
 import org.dxworks.metrixppLizardWrapper.Reader.FileReader;
 import org.dxworks.metrixppLizardWrapper.Reader.MetrixppCSVFileReader;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Objects;
 
-public class DockerMetrixppRunner {
+public class DockerMetrixppRunner extends DockerRunner<MetrixppOutput> {
 
-    public static List<UnifiedOutput> runMetrixpp(Path projectPath, Path outputPath, String metrixppImage) throws FileNotFoundException {
+    private static DockerMetrixppRunner shared;
+
+    public static DockerMetrixppRunner getInstance() {
+        if (Objects.isNull(shared)) {
+            shared = new DockerMetrixppRunner();
+        }
+        return shared;
+    }
+
+    private DockerMetrixppRunner() {}
+
+    @Override
+    protected FileReader<MetrixppOutput> getFileReader() {
+        return MetrixppCSVFileReader.getInstance();
+    }
+
+    @Override
+    protected File runTool(Path projectPath, Path outputPath, String imageID) {
 
         DockerClient client = DockerClientBuilder.getInstance().build();
 
-        CreateContainerResponse response = client.createContainerCmd(metrixppImage)
+        CreateContainerResponse response = client.createContainerCmd(imageID)
                 .withBinds(
                         Bind.parse(outputPath.toString() + ":/usr/analysis/result"),
                         Bind.parse(projectPath.toString() + ":/usr/analysis/sources"))
@@ -37,11 +51,9 @@ public class DockerMetrixppRunner {
 
         client.removeContainerCmd(container).exec();
 
-        FileReader<MetrixppOutput> metrixppOutput = MetrixppCSVFileReader.getInstance();
-
         File file = Paths.get(outputPath.toString() + "/test.csv").toFile();
 
-        return metrixppOutput.readFileCSV(file).stream().map(MetrixppOutput::unify).collect(Collectors.toList());
-
+        return file;
     }
+
 }

@@ -39,6 +39,8 @@ public class ConsoleArgumentsList {
 
             if (!Objects.isNull(input)) {
                 instance.setInputDir(Paths.get(input));
+            } else {
+                throw new RuntimeException("No input path provided for property -DinputDir");
             }
 
             if (!Objects.isNull(output)) {

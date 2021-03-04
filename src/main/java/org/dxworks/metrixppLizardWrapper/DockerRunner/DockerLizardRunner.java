@@ -4,6 +4,7 @@ import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.api.command.CreateContainerResponse;
 import com.github.dockerjava.api.model.Bind;
 import com.github.dockerjava.core.DockerClientBuilder;
+import org.dxworks.metrixppLizardWrapper.Config.Entity.ConfigPair;
 import org.dxworks.metrixppLizardWrapper.Entity.LizardOutput;
 import org.dxworks.metrixppLizardWrapper.Reader.FileReader;
 import org.dxworks.metrixppLizardWrapper.Reader.LizardCSVFileReader;
@@ -11,6 +12,7 @@ import org.dxworks.metrixppLizardWrapper.Reader.LizardCSVFileReader;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Objects;
 
 public class DockerLizardRunner extends DockerRunner<LizardOutput> {
@@ -32,7 +34,7 @@ public class DockerLizardRunner extends DockerRunner<LizardOutput> {
     }
 
     @Override
-    protected File runTool(Path projectPath, Path outputPath, String imageID) {
+    protected File runTool(Path projectPath, Path outputPath, String imageID, List<ConfigPair> configs) {
 
         DockerClient client = DockerClientBuilder.getInstance().build();
 

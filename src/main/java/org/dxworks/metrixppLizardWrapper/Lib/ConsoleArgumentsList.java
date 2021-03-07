@@ -7,6 +7,7 @@ import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
+import java.util.Optional;
 
 @Data
 @ToString
@@ -18,7 +19,7 @@ public class ConsoleArgumentsList {
     private Path outputDir;
     private String lizardImageId;
     private String metrixppImageID;
-    private File configFile;
+    private Optional<File> configFile;
 
     private ConsoleArgumentsList() {}
 
@@ -47,16 +48,12 @@ public class ConsoleArgumentsList {
                 instance.setOutputDir(Paths.get(output));
             }
 
-            if (!Objects.isNull(lizard)) {
-                instance.setLizardImageId(lizard);
-            }
+            instance.setLizardImageId(lizard);
 
-            if (!Objects.isNull(metrixpp)) {
-                instance.setMetrixppImageID(metrixpp);
-            }
+            instance.setMetrixppImageID(metrixpp);
 
             if (!Objects.isNull(config)) {
-                instance.setConfigFile(Paths.get(config).toFile());
+                instance.setConfigFile(Optional.of(Paths.get(config).toFile()));
             }
         }
 

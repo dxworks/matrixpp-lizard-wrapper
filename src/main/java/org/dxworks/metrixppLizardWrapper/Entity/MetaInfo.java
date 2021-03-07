@@ -12,6 +12,6 @@ import lombok.ToString;
 public class MetaInfo {
     private long timestamp;
     private long duration;
-    private String metrixpp_status;
-    private String lizard_status;
+    private ToolStatus metrixppStatus;
+    private ToolStatus lizardStatus;
 }

@@ -42,7 +42,7 @@ public class DockerMetrixppRunner extends DockerRunner<MetrixppOutput> {
                 .withBinds(
                         Bind.parse(outputPath.toString() + ":/usr/analysis/result"),
                         Bind.parse(projectPath.toString() + ":/usr/analysis/sources"))
-                .withEnv("PROJECT_ID=test")
+                .withEnv("PROJECT_ID=metrixpp")
                 .exec();
 
         String container = response.getId();
@@ -53,7 +53,7 @@ public class DockerMetrixppRunner extends DockerRunner<MetrixppOutput> {
 
         client.removeContainerCmd(container).exec();
 
-        File file = Paths.get(outputPath.toString() + "/test.csv").toFile();
+        File file = Paths.get(outputPath.toString() + "/metrixpp.csv").toFile();
 
         return file;
     }

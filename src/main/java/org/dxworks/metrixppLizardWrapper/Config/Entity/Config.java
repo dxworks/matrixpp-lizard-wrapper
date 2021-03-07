@@ -9,10 +9,13 @@ import java.util.stream.Collectors;
 
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
 @ToString
 public class Config {
     private ConfigBody config;
+
+    public Config() {
+        this.config = new ConfigBody();
+    }
 
     public static List<String> getEnvStrings(@NonNull List<ConfigPair> pairs) {
         return pairs.stream()

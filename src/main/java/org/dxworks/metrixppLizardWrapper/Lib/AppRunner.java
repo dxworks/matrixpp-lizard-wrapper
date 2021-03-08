@@ -32,6 +32,8 @@ public class AppRunner {
 
                 outputs.addAll(outputsLizard);
 
+                outputWithMetaInfo.getMetaInfo().setLizardStatus(ToolStatus.SUCCESS);
+
             } catch (Exception e) {
                 e.printStackTrace();
                 outputWithMetaInfo.getMetaInfo().setLizardStatus(ToolStatus.FAILURE);
@@ -46,6 +48,8 @@ public class AppRunner {
                 List<UnifiedOutput> outputsMetrixpp = runMetrixpp();
 
                 outputs.addAll(outputsMetrixpp);
+
+                outputWithMetaInfo.getMetaInfo().setMetrixppStatus(ToolStatus.SUCCESS);
 
             } catch (Exception e) {
                 e.printStackTrace();

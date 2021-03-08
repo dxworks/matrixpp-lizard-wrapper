@@ -33,7 +33,9 @@ public class AppRunner {
 
                 outputs.addAll(outputsLizard);
 
-                outputWithMetaInfo.getMetaInfo().setLizardStatus(ToolStatus.SUCCESS);
+                if (outputsLizard.size() != 0) {
+                    outputWithMetaInfo.getMetaInfo().setLizardStatus(ToolStatus.SUCCESS);
+                }
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -50,7 +52,9 @@ public class AppRunner {
 
                 outputs.addAll(outputsMetrixpp);
 
-                outputWithMetaInfo.getMetaInfo().setMetrixppStatus(ToolStatus.SUCCESS);
+                if (outputsMetrixpp.size() != 0) {
+                    outputWithMetaInfo.getMetaInfo().setMetrixppStatus(ToolStatus.SUCCESS);
+                }
 
             } catch (Exception e) {
                 e.printStackTrace();

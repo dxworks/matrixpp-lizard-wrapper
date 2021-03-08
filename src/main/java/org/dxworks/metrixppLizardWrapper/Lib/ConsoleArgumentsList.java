@@ -19,7 +19,7 @@ public class ConsoleArgumentsList {
     private Path outputDir;
     private String lizardImageId;
     private String metrixppImageID;
-    private Optional<File> configFile;
+    private File configFile;
 
     private ConsoleArgumentsList() {}
 
@@ -53,7 +53,7 @@ public class ConsoleArgumentsList {
             instance.setMetrixppImageID(metrixpp);
 
             if (!Objects.isNull(config)) {
-                instance.setConfigFile(Optional.of(Paths.get(config).toFile()));
+                instance.setConfigFile(Paths.get(config).toFile());
             }
         }
 

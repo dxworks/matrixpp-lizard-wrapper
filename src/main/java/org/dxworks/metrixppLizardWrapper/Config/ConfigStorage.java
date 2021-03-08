@@ -4,9 +4,8 @@ import org.dxworks.metrixppLizardWrapper.Config.Entity.Config;
 import org.dxworks.metrixppLizardWrapper.Config.Entity.ConfigBody;
 import org.dxworks.metrixppLizardWrapper.Lib.ConsoleArgumentsList;
 
-import java.io.IOException;
+import java.io.File;
 import java.util.Objects;
-import java.util.Optional;
 
 public class ConfigStorage {
 
@@ -14,17 +13,20 @@ public class ConfigStorage {
 
     private Config config;
 
-    private ConfigStorage() {
-        ConsoleArgumentsList.getInstance().getConfigFile().ifPresent(configFile -> {
-            try {
-                this.config = ConfigReader.getInstance().readConfigFile(configFile);;
-            } catch (IOException ignored) {}
-        });
-    }
+    private ConfigStorage() {}
 
     public static ConfigStorage getInstance() {
         if (Objects.isNull(instance)) {
             instance = new ConfigStorage();
+            instance.config = new Config();
+            try {
+                File configFile = ConsoleArgumentsList.getInstance().getConfigFile();
+                if (!Objects.isNull(configFile)) {
+                    instance.config = ConfigReader.getInstance().readConfigFile(configFile);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         return instance;
     }

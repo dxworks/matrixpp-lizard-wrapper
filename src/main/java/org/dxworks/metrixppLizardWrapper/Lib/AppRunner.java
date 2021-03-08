@@ -8,8 +8,9 @@ import org.dxworks.metrixppLizardWrapper.DockerRunner.DockerMetrixppRunner;
 import org.dxworks.metrixppLizardWrapper.DockerRunner.DockerRunner;
 import org.dxworks.metrixppLizardWrapper.Entity.*;
 
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
@@ -67,7 +68,21 @@ public class AppRunner {
 
         String jsonOutput = gson.toJson(outputWithMetaInfo);
 
-        System.out.println(jsonOutput);
+//        System.out.println(jsonOutput);
+
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(getOutputPath()))) {
+            writer.write(jsonOutput);
+        } catch(IOException e){
+            throw new RuntimeException("Couldn't write to output file");
+        }
+    }
+
+    private static File getOutputPath() {
+        Path output = ConsoleArgumentsList.getInstance().getOutputDir();
+
+        String outputFilePath = output.toString() + "/results.json";
+
+        return Paths.get(outputFilePath).toFile();
     }
 
     private static OutputWithMetaInfo init() {

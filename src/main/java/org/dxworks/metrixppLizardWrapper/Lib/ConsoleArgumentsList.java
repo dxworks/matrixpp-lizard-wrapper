@@ -30,7 +30,11 @@ public class ConsoleArgumentsList {
 
             String input = System.getProperty("inputDir", null);
 
-            String output = System.getProperty("outputDir", null);
+            String currentDir = System.getProperty("user.dir");
+
+            String defaultOutputDir = currentDir + "/results";
+
+            String output = System.getProperty("outputDir", defaultOutputDir);
 
             String lizard = System.getProperty("lizardImageID", null);
 
@@ -44,9 +48,7 @@ public class ConsoleArgumentsList {
                 throw new RuntimeException("No input path provided for property -DinputDir");
             }
 
-            if (!Objects.isNull(output)) {
-                instance.setOutputDir(Paths.get(output));
-            }
+            instance.setOutputDir(Paths.get(output));
 
             instance.setLizardImageId(lizard);
 

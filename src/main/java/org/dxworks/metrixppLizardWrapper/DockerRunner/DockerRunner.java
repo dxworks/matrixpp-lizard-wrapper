@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 public abstract class DockerRunner <A extends UnifiableOutput> {
 
-    public List<UnifiedOutput> getUnified(@NonNull Path projectPath, @NonNull Path outputPath, @NonNull String imageID, List<ConfigPair> configs) throws FileNotFoundException {
+    public List<UnifiedOutput> getUnified(@NonNull Path projectPath, @NonNull Path outputPath, @NonNull String imageID, List<ConfigPair> configs) throws FileNotFoundException, InterruptedException {
         File results = runTool(projectPath, outputPath, imageID, configs);
 
         return unifyResults(results);
@@ -22,7 +22,7 @@ public abstract class DockerRunner <A extends UnifiableOutput> {
 
     protected abstract FileReader<A> getFileReader();
 
-    protected abstract File runTool(Path projectPath, Path outputPath, String imageID, List<ConfigPair> configs);
+    protected abstract File runTool(Path projectPath, Path outputPath, String imageID, List<ConfigPair> configs) throws InterruptedException;
 
     protected List<UnifiedOutput> unifyResults(File file) throws FileNotFoundException {
         return getFileReader().readFileCSV(file)

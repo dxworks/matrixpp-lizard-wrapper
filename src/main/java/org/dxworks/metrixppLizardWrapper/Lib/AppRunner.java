@@ -111,7 +111,7 @@ public class AppRunner {
         return finalOutput;
     }
 
-    private static List<UnifiedOutput> runLizard() throws FileNotFoundException {
+    private static List<UnifiedOutput> runLizard() throws FileNotFoundException, InterruptedException {
 
         String image = ConsoleArgumentsList.getInstance().getLizardImageId();
 
@@ -121,7 +121,7 @@ public class AppRunner {
 
     }
 
-    private static List<UnifiedOutput> runMetrixpp() throws FileNotFoundException {
+    private static List<UnifiedOutput> runMetrixpp() throws FileNotFoundException, InterruptedException {
 
         String image = ConsoleArgumentsList.getInstance().getMetrixppImageID();
 
@@ -131,7 +131,7 @@ public class AppRunner {
 
     }
 
-    private static <A extends UnifiableOutput> List<UnifiedOutput> runTool(String image, List<ConfigPair> configPairs, DockerRunner<A> runner) throws FileNotFoundException {
+    private static <A extends UnifiableOutput> List<UnifiedOutput> runTool(String image, List<ConfigPair> configPairs, DockerRunner<A> runner) throws FileNotFoundException, InterruptedException {
         Path input = ConsoleArgumentsList.getInstance().getInputDir();
 
         Path output = ConsoleArgumentsList.getInstance().getOutputDir();

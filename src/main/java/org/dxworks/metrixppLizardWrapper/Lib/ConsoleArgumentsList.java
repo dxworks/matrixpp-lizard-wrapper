@@ -7,7 +7,6 @@ import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
-import java.util.Optional;
 
 @Data
 @ToString
@@ -36,9 +35,9 @@ public class ConsoleArgumentsList {
 
             String output = System.getProperty("outputDir", defaultOutputDir);
 
-            String lizard = System.getProperty("lizardImageID", null);
+            String lizard = System.getProperty("lizardImageID", "denisudevforfood/lizard:1.1");
 
-            String metrixpp = System.getProperty("metrixppImageID", null);
+            String metrixpp = System.getProperty("metrixppImageID", "dxworks/metrixpp:1.4");
 
             String config = System.getProperty("config", null);
 

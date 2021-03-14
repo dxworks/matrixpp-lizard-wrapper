@@ -8,6 +8,7 @@ import com.github.dockerjava.api.model.Bind;
 import com.github.dockerjava.api.model.HostConfig;
 import com.github.dockerjava.api.model.Image;
 import com.github.dockerjava.core.DockerClientBuilder;
+import org.dxworks.metrixppLizardWrapper.Config.Entity.Config;
 import org.dxworks.metrixppLizardWrapper.Config.Entity.ConfigPair;
 import org.dxworks.metrixppLizardWrapper.Entity.LizardOutput;
 import org.dxworks.metrixppLizardWrapper.Reader.FileReader;
@@ -56,6 +57,8 @@ public class DockerLizardRunner extends DockerRunner<LizardOutput> {
             System.out.println("We have lizard");
         }
 
+        List<String> configElements = Config.getEnvStrings(configs);
+
         CreateContainerCmd response = client.createContainerCmd(imageID);
 
         HostConfig hostConfig = new HostConfig().withBinds(
@@ -63,6 +66,10 @@ public class DockerLizardRunner extends DockerRunner<LizardOutput> {
                 Bind.parse(projectPath.toString() + ":/app/project"));
 
         response.withHostConfig(hostConfig);
+
+        response.withEnv(configElements);
+
+        System.out.println("Config Lizard: " + configElements);
 
         String container = response.exec().getId();
 

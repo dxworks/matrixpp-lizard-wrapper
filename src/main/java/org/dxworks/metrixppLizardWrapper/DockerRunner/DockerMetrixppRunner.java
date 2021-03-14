@@ -8,6 +8,7 @@ import com.github.dockerjava.api.model.Bind;
 import com.github.dockerjava.api.model.HostConfig;
 import com.github.dockerjava.api.model.Image;
 import com.github.dockerjava.core.DockerClientBuilder;
+import org.dxworks.metrixppLizardWrapper.Config.Entity.Config;
 import org.dxworks.metrixppLizardWrapper.Config.Entity.ConfigPair;
 import org.dxworks.metrixppLizardWrapper.Entity.MetrixppOutput;
 import org.dxworks.metrixppLizardWrapper.Reader.FileReader;
@@ -64,7 +65,13 @@ public class DockerMetrixppRunner extends DockerRunner<MetrixppOutput> {
                         Bind.parse(projectPath.toString() + ":/usr/analysis/sources"));
 
 
-        response.withHostConfig(hostConfig).withEnv("PROJECT_ID=metrixpp");
+        response.withHostConfig(hostConfig);
+
+        List<String> configElements = Config.getEnvStrings(configs);
+
+        configElements.add("PROJECT_ID=metrixpp");
+
+        response.withEnv(configElements);
 
         String container = response.exec().getId();
 
